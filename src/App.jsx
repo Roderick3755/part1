@@ -2,22 +2,6 @@ import Header from "./Header";
 import Content from "./content";
 import Total from "./total";
 
-// const App = () => {
-//   const course = "Half Stack application development";
-//   const parts = [
-//     {
-//       name: "Fundamentals of React",
-//       exercises: 10,
-//     },
-//     {
-//       name: "Using props to pass data",
-//       exercises: 7,
-//     },
-//     {
-//       name: "State of a component",
-//       exercises: 14,
-//     },
-//   ];
 const App = () => {
   const course = {
     name: "Half Stack application development",
@@ -41,8 +25,6 @@ const App = () => {
     <div>
       <Header course={course.name} />
       <Content part={course.parts} exercises={course.parts} />
-      {/* <Content part={part2.name} exercises={part2.exercises} />
-      <Content part={part3.name} exercises={part3.exercises} /> */}
 
       <Total exercises={course.parts} />
     </div>
